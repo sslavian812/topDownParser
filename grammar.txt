@@ -1,0 +1,29 @@
+Arithmetic expressions with numbers, parentheses,  plus(+), minus(-), unary minus and multiplication(*).
+
+E -> E+T | E-T | T
+T -> T*E | F
+F -> -F| (E) | n
+
+Reduce left recursion:
+assume, that (E'=U, T'=V)
+
+E -> TU | T
+U -> +TU | -TU | +T | -T | e
+T -> FV | F
+V -> *EV | *E | e
+F -> -F| (E) | n
+
+
+FIRST:
+E  -> {- n (}
+U -> {+ - e}
+T  -> {-,n, (}
+V -> {*, e}
+F  -> {-, n, (}
+
+FOLLOW:
+E  -> {$, )}
+U -> {$, )}
+T  -> {$, +, -, )}
+V -> {$, +, -, )}
+F  -> {$, +, -, *, )}
