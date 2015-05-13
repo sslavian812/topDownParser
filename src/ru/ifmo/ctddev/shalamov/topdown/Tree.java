@@ -68,10 +68,15 @@ public class Tree {
     }
 
     private void writeGraph(PrintWriter writer, VertexNumber vertex) {
-        if (children == null || (children.size() == 0 && !node.equals("e"))) {
+        if(node.equals("e")) {
             writer.println(String.format("\ta_%s [label=\"%s\"; style=filled; fillcolor=red;];", vertex.value, node));
+            return;
+        }
+
+        if (children == null || (children.size() == 0 && !node.equals("e"))) {
+            writer.println(String.format("\ta_%s [label=\"%s\"; style=filled; fillcolor=green;];", vertex.value, node));
         } else {
-            writer.println(String.format("\ta_%s [label=\"%s\"];", vertex.value, node));
+                writer.println(String.format("\ta_%s [label=\"%s\"];", vertex.value, node));
         }
         if (children != null) {
             List<Integer> successors = new ArrayList<>();

@@ -1,0 +1,134 @@
+digraph parseTree {
+	ordering=out;
+	a_0 [label="E"];
+	a_1 [label="T"];
+	a_2 [label="F"];
+	a_3 [label="-"; style=filled; fillcolor=green;];
+	a_4 [label="F"];
+	a_5 [label="1"; style=filled; fillcolor=green;];
+	a_4 -> a_5
+	a_2 -> a_3
+	a_2 -> a_4
+	a_6 [label="V"];
+	a_7 [label="e"; style=filled; fillcolor=red;];
+	a_6 -> a_7
+	a_1 -> a_2
+	a_1 -> a_6
+	a_8 [label="U"];
+	a_9 [label="-"; style=filled; fillcolor=green;];
+	a_10 [label="T"];
+	a_11 [label="F"];
+	a_12 [label="2"; style=filled; fillcolor=green;];
+	a_11 -> a_12
+	a_13 [label="V"];
+	a_14 [label="e"; style=filled; fillcolor=red;];
+	a_13 -> a_14
+	a_10 -> a_11
+	a_10 -> a_13
+	a_15 [label="U"];
+	a_16 [label="-"; style=filled; fillcolor=green;];
+	a_17 [label="T"];
+	a_18 [label="F"];
+	a_19 [label="3"; style=filled; fillcolor=green;];
+	a_18 -> a_19
+	a_20 [label="V"];
+	a_21 [label="e"; style=filled; fillcolor=red;];
+	a_20 -> a_21
+	a_17 -> a_18
+	a_17 -> a_20
+	a_22 [label="U"];
+	a_23 [label="-"; style=filled; fillcolor=green;];
+	a_24 [label="T"];
+	a_25 [label="F"];
+	a_26 [label="4"; style=filled; fillcolor=green;];
+	a_25 -> a_26
+	a_27 [label="V"];
+	a_28 [label="e"; style=filled; fillcolor=red;];
+	a_27 -> a_28
+	a_24 -> a_25
+	a_24 -> a_27
+	a_29 [label="U"];
+	a_30 [label="-"; style=filled; fillcolor=green;];
+	a_31 [label="T"];
+	a_32 [label="F"];
+	a_33 [label="6"; style=filled; fillcolor=green;];
+	a_32 -> a_33
+	a_34 [label="V"];
+	a_35 [label="e"; style=filled; fillcolor=red;];
+	a_34 -> a_35
+	a_31 -> a_32
+	a_31 -> a_34
+	a_36 [label="U"];
+	a_37 [label="+"; style=filled; fillcolor=green;];
+	a_38 [label="T"];
+	a_39 [label="F"];
+	a_40 [label="3"; style=filled; fillcolor=green;];
+	a_39 -> a_40
+	a_41 [label="V"];
+	a_42 [label="e"; style=filled; fillcolor=red;];
+	a_41 -> a_42
+	a_38 -> a_39
+	a_38 -> a_41
+	a_43 [label="U"];
+	a_44 [label="+"; style=filled; fillcolor=green;];
+	a_45 [label="T"];
+	a_46 [label="F"];
+	a_47 [label="2"; style=filled; fillcolor=green;];
+	a_46 -> a_47
+	a_48 [label="V"];
+	a_49 [label="e"; style=filled; fillcolor=red;];
+	a_48 -> a_49
+	a_45 -> a_46
+	a_45 -> a_48
+	a_50 [label="U"];
+	a_51 [label="-"; style=filled; fillcolor=green;];
+	a_52 [label="T"];
+	a_53 [label="F"];
+	a_54 [label="2"; style=filled; fillcolor=green;];
+	a_53 -> a_54
+	a_55 [label="V"];
+	a_56 [label="e"; style=filled; fillcolor=red;];
+	a_55 -> a_56
+	a_52 -> a_53
+	a_52 -> a_55
+	a_57 [label="U"];
+	a_58 [label="+"; style=filled; fillcolor=green;];
+	a_59 [label="T"];
+	a_60 [label="F"];
+	a_61 [label="2"; style=filled; fillcolor=green;];
+	a_60 -> a_61
+	a_62 [label="V"];
+	a_63 [label="e"; style=filled; fillcolor=red;];
+	a_62 -> a_63
+	a_59 -> a_60
+	a_59 -> a_62
+	a_64 [label="U"];
+	a_65 [label="e"; style=filled; fillcolor=red;];
+	a_64 -> a_65
+	a_57 -> a_58
+	a_57 -> a_59
+	a_57 -> a_64
+	a_50 -> a_51
+	a_50 -> a_52
+	a_50 -> a_57
+	a_43 -> a_44
+	a_43 -> a_45
+	a_43 -> a_50
+	a_36 -> a_37
+	a_36 -> a_38
+	a_36 -> a_43
+	a_29 -> a_30
+	a_29 -> a_31
+	a_29 -> a_36
+	a_22 -> a_23
+	a_22 -> a_24
+	a_22 -> a_29
+	a_15 -> a_16
+	a_15 -> a_17
+	a_15 -> a_22
+	a_8 -> a_9
+	a_8 -> a_10
+	a_8 -> a_15
+	a_0 -> a_1
+	a_0 -> a_8
+}
